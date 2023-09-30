@@ -1,5 +1,5 @@
-from django.http import httpsResponse
+from django.http import HttpResponse
 
 # Create your views here.
-def Home_page_view(request):
-    return httpsResponse("Hello, Emarex")
+def home_page_view(request):
+    return HttpResponse("Hello, Emarex")
