@@ -3,6 +3,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
   }
+
+  header .nav-right a {
+    text-decoration: none;
+    color: darkgreen;
+  }
   
   header {
     border-bottom: 1px solid #999;
@@ -11,8 +16,12 @@ body {
   }
   
   header h1 a {
-    color: red;
+    color: rgb(128, 5, 5);
     text-decoration: none;
+  }
+
+  h1.delete {
+    color: darkred !important;
   }
   
   .nav-left {

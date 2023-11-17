@@ -5,7 +5,7 @@
     <title>Django blog</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
       rel="stylesheet">
-    <link href="{% static 'css/base.css' %}" rel="stylesheet"s>
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
   </head>
   <body>
     <div>
@@ -18,7 +18,7 @@
         </div>
       </header>
       {% if user.is_authenticated %}
-        <p><b>Hi {{ user.username }}!</b></p>
+        <p>Hi {{ user.username }}!</p>
         <p><a href="{% url 'logout' %}">Log out</a></p>
       {% else %}
         <p>You are not logged in.</p>
@@ -30,3 +30,8 @@
     </div>
   </body>
 </html>
+
+i applied the below css to remove the underline in create new blog above but not working
+header .nav-right a {
+    text-decoration: none;
+  }
